@@ -6,3 +6,59 @@
         display: inline-block;
     }
 }
+
+/********************************************************
+*********************************************************
+********************************************************/
+
+/*Avatar-section-Tablet*/
+
+@media screen and (min-width:762px) {
+    .avatar-section {
+        display: inline-block;
+        width: 10%;
+    }
+
+    .chat-section {
+        width: 90%;
+    }
+}
+
+/********************************************************
+*********************************************************
+********************************************************/
+
+/*Container Desktop*/
+
+@media screen and (min-width:992px) {
+    .container {
+        background:rgb(217 219 213) ;
+        padding: .5rem;
+    }
+    .cont-desktop {
+        margin: 2rem auto;
+        width: 80%;
+    }
+}
+
+
+/********************************************************
+*********************************************************
+********************************************************/
+
+/*Header Desktop*/
+
+@media screen and (min-width:992px) {
+    .header-avatar {
+        width: 30%;
+        text-align: left;
+    }
+
+    .header-chat {
+        width: 60%;
+    }
+
+    .header-icons {
+        width: 10%;
+    }
+}
