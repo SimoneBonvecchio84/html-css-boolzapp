@@ -1,6 +1,71 @@
+/*MOBILE FIRST*/
+
 /*RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 70px;
+}
+
+/*Utility*/
+.display-flex {
+    display: flex;
+}
+
+.dispaly-none {
+    display: none;
+}
+
+.center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*COMMON*/
+
+/*Layout*/
+/*Header*/ 
+
+.header {
+    width: 100%;
+    padding: .5rem;
+     /*debug*/
+     border: 1px solid;
+    
+} 
+
+.header-avatar {
+    width: 10%;
+    /*debug*/
+    border: 1px solid;
+    
+}
+
+.header-chat {
+    width: 70%;
+    height: 70px;
+    /*debug*/
+    border: 1px solid;
+}
+
+
+.header-icons {
+    width: 20%;
+    /*debug*/
+    border: 1px solid;
+}
+
+
+
