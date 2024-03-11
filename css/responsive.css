@@ -1,0 +1,8 @@
+/*Header Tablet */
+
+@media screen and (min-width:762px) {
+    .header-avatar,
+    .header-icons {
+        display: inline-block;
+    }
+}
