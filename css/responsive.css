@@ -5,6 +5,10 @@
     .header-icons {
         display: inline-block;
     }
+
+    .header-avatar {
+        text-align: center;
+    }
 }
 
 /********************************************************
@@ -22,22 +26,78 @@
     .chat-section {
         width: 90%;
     }
+
+
 }
 
 /********************************************************
 *********************************************************
 ********************************************************/
 
+/*Main section Tablet*/
+
+@media screen and (min-width:762px) {
+    .cont-avatar-bell,
+    .cont-avatar-input{
+        display: none;
+    }
+
+    .section-main {
+        height: 80%;
+    }
+
+    .your-angle {
+        top:200px;
+        right: 210px;
+        
+    }
+    .info-avatar {
+        display: none;
+    }
+}
+
+
+/********************************************************
+*********************************************************
+********************************************************/
+ /*Footer Tablet*/
+ @media screen and (min-width:762px) {
+    .footer {
+        width: 90%;
+        margin-left:76.23px;
+        position: absolute;
+        bottom: -52px;
+        right: 0;
+    }
+ }
+
+
+
+
+
+
+/********************************************************
+*********************************************************
+********************************************************/
+
+
+
+
 /*Container Desktop*/
 
 @media screen and (min-width:992px) {
     .container {
         background:rgb(217 219 213) ;
+        height: 120vh;
         padding: .5rem;
+        
+        
     }
     .cont-desktop {
         margin: 2rem auto;
         width: 80%;
+        height: 85%;
+        position: relative;
     }
 }
 
@@ -52,13 +112,122 @@
     .header-avatar {
         width: 30%;
         text-align: left;
+        display: flex;   
+        justify-content: space-between; 
     }
 
+    .header-avatar-icons  {
+        width:50%;
+        /*debug*/
+        border: 1px dashed;
+        
+    }
+    
     .header-chat {
         width: 60%;
     }
-
+    .cont-img-avatar {
+        width: 50%;
+        margin-left: .5rem;
+    }
     .header-icons {
         width: 10%;
     }
 }
+
+
+/********************************************************
+*********************************************************
+********************************************************/
+
+/*Main section Desktop*/
+
+@media screen and (min-width:992px) {
+    
+   
+    
+    .avatar-section {
+        width: 30%;
+        
+    }
+
+    .info-avatar {
+        display: flex;
+    }
+
+    .chat-section {
+        width:70%;
+        
+    }
+
+    .cont-avatar-section {
+        border: 1px solid lightgray;
+        background-color: white;
+        display: flex;
+    }
+
+    .cont-avatar-bell {
+        display: flex;
+        height: 50px;
+        background-color:rgb(142 218 252);
+        align-items: center;
+    }
+
+    .bell-cont {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: white;
+        object-fit:cover ;
+        border-radius: 50%;
+        margin-left: 1rem;
+
+    }
+    .fa-bell-slash {
+        color: rgb(142 218 252);
+    }
+
+    .infobell-cont {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .info-bell {
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+    .cont-avatar-input {
+        display: flex;
+        height: 30px;
+        padding: .5rem;
+        justify-content: center;
+       
+    }
+
+    
+
+    .input {
+        
+        
+    }
+
+    .your-angle {
+        top: 210px;
+        right: 170px;
+    }
+}
+
+/********************************************************
+*********************************************************
+********************************************************/
+ /*Footer*/
+
+ @media screen and (min-width:992px) {
+    .footer {
+        width:547.9px;
+        bottom: -52px;
+        right: 0;
+        
+    }
+ }
