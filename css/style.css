@@ -16,11 +16,13 @@ a {
 /*CUSTOM PROP*/
 :root {
     --baground-search-chat:rgb(142 218 252);
+    --baground-header:rgb(234 234 234)
 }
 /*HEADER*/
 .ms_header-left,
 .ms_header-right {
     height:70px ;
+    background-color: var(--baground-header);
 }
 
 .ms_incons-avatar {
@@ -30,6 +32,10 @@ a {
 .ms_avatar-chat-cont,
 .ms_avatar-cont {
     width: 70%;    
+}
+
+.ms_chat-icons {
+    width: 30%;
 }
 
 /*Main-Avatar*/
@@ -101,6 +107,7 @@ a {
 **********************************************************/
 .ms_footer {
     height: 70px;
+    background-color: var(--baground-header);
     
 } 
 .ms_foot-center {
@@ -115,6 +122,8 @@ a {
 
 .ms_input-footer {
     width: 95%;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .fa-face-smile,
