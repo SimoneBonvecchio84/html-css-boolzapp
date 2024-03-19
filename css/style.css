@@ -1,209 +1,117 @@
-/*MOBILE FIRST*/
-
 /*RESET*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 img {
-    max-width: 100%;
-    width: 40px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.name-avatar {
-    font-size: .9rem;
+    width: 60px;
 }
 
-a {
-    font-size: .6rem;
-    color: grey;
+.ms_info-hours {
+    font-size: .7rem;
 }
-
-.lorem-avatar,
-.hours-chat {
-    font-size: .6rem;
-    color: gray;
-    
+.ms_mess-text {
+    font-size: .7rem;
 }
-/*Utility*/
-
-.display-flex {
-    display: flex;
-}
-
-.wrap {
-    flex-wrap: wrap;
-}
-
-.dispaly-none {
-    display: none;
-}
-
-.center {
-    align-items: center;
-}
-
-.end {
-    justify-content: end;
-}
-
-.start {
-    align-items: start;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.p-1 {
-    padding: .5rem;
-}
-
-.p-2 {
-    padding: 2rem;
-}
-.m-l {
-    margin-left: .5rem;
-}
-.m-b-05 {
-    margin-bottom: .5rem;
-}
-/*Custom Properties*/
-
+/*CUSTOM PROP*/
 :root {
-    --backgound-grey:rgb(234 234 234);
+    --baground-search-chat:rgb(142 218 252);
+}
+/*HEADER*/
+.ms_header-left,
+.ms_header-right {
+    height:70px ;
 }
 
-/*COMMON*/
 
-/*Layout*/
-/*Header*/ 
-
-.container {
-    width: 100%;
-    height: 100vh;    
+.ms_avatar-chat-cont {
+    width: 70%;    
 }
 
-.header {
-    width: 100%;
-    background-color:var(--backgound-grey) ;
+/*Main-Avatar*/
+.ms_new-mess {
+    height: 80px;
     
-} 
+}
 
-.header-avatar {
-    width: 10%;
+.ms_search-chat {
+    height: 60px;
+}
+
+
+/*RESPONSIVE*/
+/*Card section Tablet*/
+@media screen and (min-width:768px) {
+    .ms_cont-card {
+        height: 682px;
    
-    
-}
-
-.header-chat {
-    width: 70%;
-    
+    }
 }
 
 
-.header-icons {
-    width: 20%;
-    
+
+/*RESPONSIVE*/
+/*Card section Desktop*/
+@media screen and (min-width:992px) {
+    .ms_cont-card {
+        height: 542px;
+       
+    } 
 }
 
-.cont-img-chat {
-    margin-left: .5rem;
+.ms_new-mess {
+    background-color: var(--baground-search-chat);
+}
+.ms_cont-bell {
+    background-color: white;
 }
 
-/*******************************************************************
-*********************************************************************
-******************************************************************/
-
-/*Main section*/
-
-.section-main {
-    height: 100%;
-    position: relative;
-}
-.avatar-section {
-    height:571.6px ;
+.fa-bell-slash {
+    color: var(--baground-search-chat);
 }
 
-.info-avatar {
-    flex-direction: column;
-    align-items:start;
-    justify-content: center;
-    margin-left: .4rem;
-    
+/*MAIN-AVATAR*/
+.ms_cont-bell {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
 }
-.chat-section {
-    width: 100%;
-    height: 521.6px;
+
+.ms_input-search {
+    width: 90%;
+}
+
+/*********************************************************
+**********************************************************/
+/*MAIN-CHAT*/
+
+.ms_main {
+    height: 612px;
     background-image: url(../img/mine.jpg);
-    overflow-y: auto;    
 }
 
-
-
-.chat-row {
-    width: 100%;
-    
-}
-
-.my-chat,
-.your-chat {
-    width: 70%;
-    position: relative;
-    margin-top: 2rem;
-    border-radius: 10px;
+::-moz-placeholder {
     font-size: .8rem;
 }
-
-.my-chat {
-    background-color: rgb(213 249 186);
-    margin-right: .5rem;
-}
-.your-chat {
-    background-color: white;
-    margin-left: .5rem;
-}
-
-.my-angle,
-.your-angle {
-    position: absolute;
-}
-
-.my-angle {
-    top:45px;
-    right: 20px;
-}
-
-.your-angle{
-   top: 225px; 
-   right:145px;
-}
-.container-avatar-img {
-    overflow-y: auto;
-}
-
-/**************************************************************
-**************************************************************
-*************************************************************/
-
-/*Footer*/
-.footer {
-    width: 100%;
-    height: 51px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--backgound-grey);
+/*********************************************************
+**********************************************************/
+.ms_footer {
+    height: 70px;
     
-    
+} 
+.ms_foot-center {
+    width: 90%;
+    height: 70px;
 }
 
+.ms_foot-left,
+.ms_foot-right{
+    width: 5%;
+}
+
+.ms_input-footer {
+    width: 95%;
+}
+
+.fa-face-smile,
+.fa-microphone {
+    font-size: 1.3rem;
+}
 
 
