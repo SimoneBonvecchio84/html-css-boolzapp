@@ -5,278 +5,348 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link -->
-
     <!-- Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- /Font -->
+    <!--/Font -->
 
-    <!-- Custome Link -->
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!--/Boostrap -->
+
+    <!-- Custom style -->
     <link rel="stylesheet" href="./css/style.css">
-    <!--/Custome Link -->
-
-    <!-- Responsive Link -->
-    <link rel="stylesheet" href="./css/responsive.css">
-    <!-- Responsive Link -->
-
+    <!--/Custom style -->
     <!-- /Link -->
-    <title>Boolzapp</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- Container -->
 
-    <div class="container">
-        <div class="cont-green-head">
-
-        </div>
-
-        <!-- cont-desktop -->
-        <div class="cont-desktop">
-
-            <!-- Header -->
-            <header class="header display-flex">
-
-                <div class="header-avatar dispaly-none ">
-
-                    <figure class="cont-img-avatar p-1">
-                        <img src="./img/avatar_io.jpg" alt="img avatar chat">
-                    </figure>
-
-                    <div class="header-avatar-icons">
+    <!-- container -->
+    <div class="container p-5  vh-120">
+        <div class="row g-0">
+            <!-- Col-Left -->
+            <div class="col d-none d-md-block col-md-2 col-lg-4">
+                <!-- Header-left -->
+                <header class="ms_header-left border">
+                    <div class="ms_avatar-cont ">
+                        <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_io.jpg" alt="img-avatar">
+                    </div>
+                    <div class="ms_incons-avatar d-none d-lg-block border">
 
                     </div>
-                </div>
+                </header>
+                <!-- /Header-left -->
 
-                <div class="header-chat display-flex center">
-                    <figure class="cont-img-chat">
-                        <img src="./img/avatar_1.jpg" alt="img avatar chat">
-                    </figure>
-
-                    <div class="name-avatar m-l">
-                        Michele
-                        <div class="hours-chat">
-                            Ultimo accesso oggi alle 16:26
+                <!-- Main-Avatar-Card -->
+                <main>
+                    <div class="ms_new-mess d-none d-lg-flex  align-items-center ">
+                        <div class="ms_cont-bell border text-center  rounded-circle ms-3">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="ms_info-bell ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                            <div class="ms_mess-text fw-bolder">
+                                Ricevi notifiche di nuovi messaggi
+                            </div>
+                            <div>
+                                <small class=" ms_info-hours">
+                                    <a class="text-secondary" href="#">Attività notifiche desktop</a>
+                                     
+                                </small>
+                            </div>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="header-icons dispaly-none">
-
-                </div>
-
-            </header>
-            <!-- /Header -->
-
-            <!-- ------------------------------------------------------------ -->
-            <!-- ------------------------------------------------------------ -->
-
-            <!-- Main -->
-            <main>
-
-                <!-- section-main  -->
-                <div class="section-main display-flex">
-
-                    <!-- avatar section -->
-                    <section class="avatar-section dispaly-none text-center">
-
-                        <div class="cont-avatar-bell">
-
-                            <div class="bell-cont">
-                                <i class="fa-solid fa-bell-slash"></i>
-                            </div>
-                            <div class="infobell-cont display-flex m-l">
-                                <div class="info-bell">
-                                    Ricevi notifiche di nuovi messaggi
-                                </div>
-
-                                <a href="#">Attiva notifiche descktop</a>
-                            </div>
-
-
+                    <div class="ms_search-chat d-none d-lg-flex justify-content-center border p-2">
+                        <div class="ms_input-search border d-flex justify-content-between align-items-center p-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="border-0"  type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
-
-
-
-                        <div class="cont-avatar-input">
-
-                            <input type="text" placeholder="cerca o inizia una nuova chat">
-
+                    </div>
+                    <!-- Cont-Avatar-Card -->
+                    <div class="ms_cont-card border overflow-y-scroll ">
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_1.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Michele
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>    
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
                         </div>
-
-
-
-                        <div class="container-avatar-img">
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_1.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Michele</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_2.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Fabio
                                 </div>
-
-                            </div>
-
-
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_2.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Fabio</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
                                 </div>
-
                             </div>
-
-
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_3.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Samuele</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
                             </div>
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_4.jpg" alt="img avatar chat">
-                                </figure>
-
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Alberto</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
-                            </div>
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_5.jpg" alt="img avatar chat">
-                                </figure>
-
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Ignazio</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
-                            </div>
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_6.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Loredana</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
-                            </div>
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_7.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Ugo</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="cont-avatar-section p-1 display-flex">
-
-                                <figure class="cont-img-chat">
-                                    <img src="./img/avatar_8.jpg" alt="img avatar chat">
-                                </figure>
-
-                                <div class="info-avatar display-flex">
-                                    <Div class="name-avatar">Tiziano</Div>
-                                    <div class="lorem-avatar">lorem ipsum dolor sit amet</div>
-                                </div>
-
-                            </div>
-
-
                         </div>
-
-                    </section>
-                    <!--/avatar section -->
-
-                    <!-- chat-section -->
-                    <section class="chat-section">
-                        <div class="chat-row display-flex end">
-                            <p class="my-chat p-2">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perspiciatis earum magnam labore, laboriosam aperiam,
-                                exercitationem eveniet harum pariatur quo delectus possimus
-                                quos error, cupiditate sit rerum ipsam? Totam, praesentium quam.
-                            </p>
-                            <i class="fa-solid fa-angle-down my-angle"></i>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_3.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Samuele
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
                         </div>
-
-                        <div class="chat-row">
-                            <p class="your-chat p-2">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perspiciatis earum magnam labore, laboriosam aperiam,
-                                exercitationem eveniet harum pariatur quo delectus
-                                possimus quos error, cupiditate sit rerum ipsam? Totam,
-                                praesentium quam.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perspiciatis earum magnam labore, laboriosam aperiam,
-                                exercitationem eveniet harum pariatur quo delectus
-                                possimus quos error, cupiditate sit rerum ipsam? Totam,
-                                praesentium quam.
-                            </p>
-                            <i class="fa-solid fa-angle-down your-angle"></i>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_4.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Alessandro
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
                         </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_5.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Goffredo
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_6.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Sara
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_7.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Ugo
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_8.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Ludovico
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_1.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Tizio
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_2.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Caio
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                        <div class="ms_avatar-card border d-flex">
+                            <img class="img-fluid rounded-circle py-1 ms-3" src="./img/avatar_3.jpg" alt="img-avatar">
+                            <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center d-none d-lg-flex">
+                                <div>
+                                    Sepronio
+                                </div>
+                                <div>
+                                    <small class="text-secondary ms_info-hours">
+                                        Lorem ipsum dolor 
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="ms-5 mt-2 d-none d-lg-block">
+                                <small class="text-secondary ms_info-hours ">
+                                16:15
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Cont-Avatar-Card -->
+                </main>
+                <!-- /Main-Avatar-Card -->
 
-                    </section>
-                    <!--/chat-section -->
-                </div>
-                <!-- /section-main  -->
-            </main>
-            <!-- /Main -->
+            </div>
+            <!-- /Col-Left -->
 
-            <!-- ------------------------------------------------------------ -->
-            <!-- ------------------------------------------------------------ -->
+            <!-- Col-Right -->
+            <div class="col col-md-10 col-lg-8 ">
+                <!-- Header-Right -->
+                <header class="ms_header-right d-flex border">
+                    <div class="ms_avatar-chat-cont d-flex  border">
+                        <img class="img rounded-circle py-1 ms-2 " src="./img/avatar_1.jpg" alt="avatar_1">
+                        <div class="ms_info-avatar ms-2 d-flex flex-column justify-content-center">
+                            <div>
+                                Michele
+                            </div>
+                            <div>
+                                <small class="text-secondary">
+                                    Ultimo accesso oggi alle 16:26
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms_chat-icons border">
 
-            <!-- Footer -->
-            <footer class="footer display-flex">
-                <div class="messagge">
-                    <input type="text" placeholder="Scrivi un messaggio">
-                </div>
-            </footer>
-            <!-- /Footer -->
+                    </div>
+                </header>
+                <!-- /Header-Right -->
+
+                <!-- Main-Chat -->
+                <main class="ms_main border">
+
+                </main>
+                <!-- /Main-Chat -->
+
+                <!-- Footer -->
+                <footer class="ms_footer border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-md-12  d-flex  justify-content-center ">
+                                <div class=" d-none d-md-flex ms_foot-left  align-items-center justify-content-center">
+                                    <i class="fa-regular fa-face-smile text-secondary"></i>
+                                </div>
+                                
+                                <div class=" ms_foot-center d-flex justify-content-center p-2">
+                                    <div class="ms_input-footer border d-flex align-items-center">
+                                        <input class="border-0 ms-2"  type="text" placeholder="Scivi un messaggio">
+                                    </div>
+                                   
+                                </div>
+                                <div class="d-none d-md-flex ms_foot-right d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-microphone text-secondary"></i>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+                <!-- /Footer -->
+            </div>
+            <!-- /Col-Right -->
         </div>
 
-        <!-- cont-desktop -->
+
     </div>
     <!-- /container -->
+
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- /Script -->
 </body>
 
 </html>
