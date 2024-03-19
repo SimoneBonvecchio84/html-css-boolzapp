@@ -9,6 +9,10 @@ img {
 .ms_mess-text {
     font-size: .7rem;
 }
+
+a {
+    color: inherit;
+}
 /*CUSTOM PROP*/
 :root {
     --baground-search-chat:rgb(142 218 252);
@@ -19,8 +23,12 @@ img {
     height:70px ;
 }
 
+.ms_incons-avatar {
+    width: 30%;
+}
 
-.ms_avatar-chat-cont {
+.ms_avatar-chat-cont,
+.ms_avatar-cont {
     width: 70%;    
 }
 
